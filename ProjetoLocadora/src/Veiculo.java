@@ -60,7 +60,7 @@ abstract class Veiculo {
 
     }
 
-    public  String toString () {
+    public  String exibirDados () {
         return marca + " " + modelo + " (" + ano + ")";
 
      }
@@ -74,20 +74,8 @@ abstract class Veiculo {
 // metodo calcularDiaria -> se qidPortas >= 4 ent~ao acrescimo de 20%
 
 
-abstract class Carro extends Veiculo {
-    private int quantidadePortas;
 
 
-
-    public Carro(String marca, String modelo, int ano, String placa, double precoBase, int quantidadePortas) {
-        super(marca, modelo, ano, placa, precoBase);
-        this.quantidadePortas = quantidadePortas;
-
-        
-
-     }
-
-}
 
 
 
